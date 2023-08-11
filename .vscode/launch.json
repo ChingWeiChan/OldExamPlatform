@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "streamlit",
+            "type": "python",
+            "request": "launch",
+            "module": "streamlit",
+            "justMyCode": true,
+            "args": [
+                "run",
+                "Upload.py"
+            ]
+        }
+    ]
+}
