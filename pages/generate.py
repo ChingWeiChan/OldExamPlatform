@@ -15,8 +15,7 @@ st.header("題目生成系統：換個方式思考")
 st.subheader("這裡可以透過輸入過的題目來產生新的題目和答案，讓你換個方式思考題目和答案！")
 options = st.selectbox("請選擇題目:", [i[0]
                        for i in run_query("SELECT * from questions;")])
-# st.session_state["OPEN_AI_API"] = st.text_input("請輸入OpenAI的API KEY")
-st.session_state["OPEN_AI_API"] = "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"
+st.session_state["OPEN_AI_API"] = st.text_input("請輸入OpenAI的API KEY")
 try:
     llm = OpenAI(
         openai_api_key=st.session_state["OPEN_AI_API"],
